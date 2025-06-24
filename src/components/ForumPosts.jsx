@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import {
   collection,
@@ -45,7 +46,7 @@ export default function ForumPost({ post }) {
 
   useEffect(() => {
     fetchComments();
-  }, []);
+  }, [fetchComments]);
 
   return (
     <div className="forum-post">
