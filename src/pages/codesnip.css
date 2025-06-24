@@ -1,0 +1,56 @@
+.codesnip-wrapper {
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+    font-family: 'Inter', sans-serif;
+    color: #eee;
+  }
+  
+  .codesnip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .codesnip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .empty-text {
+    color: #aaa;
+    text-align: center;
+    font-style: italic;
+  }
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #eee;
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-pill:hover {
+    background: #00f7ff;
+    color: #000;
+  }
+  
+  .filter-pill.active {
+    background: #00f7ff;
+    color: #000;
+    font-weight: bold;
+    border-color: #00f7ff;
+  }
+  

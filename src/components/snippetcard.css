@@ -1,0 +1,32 @@
+.snippet-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+  
+  .snippet-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #00f7ff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .snippet-btn:hover {
+    background: #00f7ff;
+    color: #000;
+  }
+  
+  .snippet-btn.delete {
+    color: #ff6b6b;
+    border-color: rgba(255, 107, 107, 0.2);
+  }
+  
+  .snippet-btn.delete:hover {
+    background: #ff6b6b;
+    color: #fff;
+  }
+  

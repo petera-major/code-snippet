@@ -1,0 +1,82 @@
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #121212, #1f1f1f);
+  }
+  
+  .profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    padding: 2.5rem 3rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 500px;
+    width: 100%;
+    color: #eee;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.1);
+    text-align: center;
+  }
+  .profile-card h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #00f7ff;
+  }
+  
+  .user-email {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 1rem;
+  }
+  
+  .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-bubble {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 140px;
+  }
+  
+  .stat-bubble h4 {
+    font-size: 1rem;
+    color: #00f7ff;
+  }
+  
+  .stat-bubble p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logout-btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    background: #00f7ff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background: #00c6e2;
+  }
+    

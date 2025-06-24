@@ -1,0 +1,65 @@
+.dashboard-wrapper {
+    padding: 2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .stats-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .stat-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 247, 255, 0.05);
+  }
+  
+  .stat-card h3 {
+    font-size: 1.2rem;
+    color: #00f7ff;
+  }
+  
+  .stat-card p {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  .recent-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .snippet-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  .add-btn {
+    background: #00f7ff;
+    border: none;
+    color: #000;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .add-btn:hover {
+    background: #00e0e0;
+  }
+  
