@@ -31,6 +31,7 @@ export default function SnippetCard({ snippet, refresh, onView }) {
       {editing ? (
         <>
           <textarea
+            className="code-input"
             rows={4}
             value={newCode}
             onChange={(e) => setNewCode(e.target.value)}
