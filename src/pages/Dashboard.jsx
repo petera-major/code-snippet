@@ -10,6 +10,20 @@ export default function Dashboard() {
   const [recentSnippets, setRecentSnippets] = useState([]);
   const [allSnippets, setAllSnippets] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  const [quoteIndex, setQuoteIndex] = useState(0);
+
+  const quotes = [
+    "Code is like humor. When you have to explain it, it’s bad.",
+    "Programs must be written for people to read.",
+    "The best code is no code at all.",
+    "✨ Tip: Save your favorite code snippets here.",
+    "🧠 Did you know? Comments are for your future self.",
+    "🔥 Stay consistent, not perfect.",
+    "💡 StackOverflow is a tool, not a crutch.",
+    "🚀 Deploy early, iterate often.",
+    "First, solve the problem. Then, write the code.",
+    "Good programmers write code humans can understand.",
+  ];
 
   useEffect(() => {
     const fetchSnippets = async () => {
@@ -31,11 +45,19 @@ export default function Dashboard() {
     fetchSnippets();
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setQuoteIndex((prevIndex) => (prevIndex + 1) % quotes.length);
+    }, 5000); 
+  
+    return () => clearInterval(interval); 
+  }, []);
+
   return (
     <>
       <Navbar />
       <div className="dashboard-wrapper">
-        {/* Top Stat Cards */}
+        {/* Stat Cards */}
         <div className="stats-section">
           <div className="glass-card stat-card">
             <h3>Snippets</h3>
@@ -43,7 +65,7 @@ export default function Dashboard() {
           </div>
           <div className="glass-card stat-card">
             <h3>Forum Posts</h3>
-            <p>Coming Soon</p>
+            <p style={{ fontSize: "0.95rem", opacity: 0.8 }}>{quotes[quoteIndex]}</p>
           </div>
           <div className="glass-card stat-card">
             <h3>Goal</h3>
@@ -51,7 +73,6 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Recent Snippets */}
         <div className="recent-section">
           <div className="section-header">
             <h2>📌 Recently Added</h2>
