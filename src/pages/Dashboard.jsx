@@ -64,7 +64,7 @@ export default function Dashboard() {
             <p>{allSnippets.length}</p>
           </div>
           <div className="glass-card stat-card">
-            <h3>Forum Posts</h3>
+            <h3>Dev Quotes</h3>
             <p style={{ fontSize: "0.95rem", opacity: 0.8 }}>{quotes[quoteIndex]}</p>
           </div>
           <div className="glass-card stat-card">

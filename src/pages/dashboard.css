@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 .dashboard-wrapper {
     padding: 2rem;
     color: #fff;
@@ -65,5 +67,44 @@
   
   .stat-card p {
     transition: opacity 0.4s ease-in-out;
+  }
+
+  .code-input,
+  .snippet-title-input,
+  .snippet-card h4 {
+    font-family: 'Fira Code', monospace;
+  }
+
+  .code-input {
+    width: 100%;
+    min-height: 150px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.95rem;
+    resize: vertical;
+    box-shadow: 0 0 10px rgba(0, 247, 255, 0.05);
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  
+  .code-input:focus {
+    border: 1px solid #00f7ff;
+    box-shadow: 0 0 12px rgba(0, 247, 255, 0.2);
+    outline: none;
+  }
+  .dashboard-wrapper ::selection {
+    background: #00f7ff;
+    color: #000;
+  }
+  .snippet-card h4 {
+    transition: color 0.3s ease;
+  }
+  
+  .snippet-card h4:hover {
+    color: #00f7ff;
   }
   
