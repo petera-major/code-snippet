@@ -1,23 +1,12 @@
 import React from "react";
 import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
-import codeGif from './assets/code.gif';
 
 export default function LandingPage() {
   const navigate = useNavigate();
 
   return (
-    <div
-      className="landing-wrapper"
-      style={{
-        backgroundImage: `url(${codeGif})`, 
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
-        position: "relative",
-      }}
-    >
+    <div className="landing-wrapper">
       <div className="overlay" />
       <div className="hero-content">
         <h1>CodeVaultSnip</h1>
@@ -26,8 +15,8 @@ export default function LandingPage() {
           from other developers.
         </p>
         <div className="button-group">
-        <button onClick={() => navigate("/login")}>Sign In</button>
-        <button onClick={() => navigate("/signup")}>Create Account</button>
+          <button onClick={() => navigate("/login")}>Sign In</button>
+          <button onClick={() => navigate("/signup")}>Create Account</button>
         </div>
       </div>
 
@@ -37,17 +26,26 @@ export default function LandingPage() {
           <div>
             <span>1</span>
             <p>
-              Paste or type your most common reused code (e.g., regex,
-              templates).
+              Save your most-used code snippets in one sleek, distraction-free space.
             </p>
           </div>
           <div>
             <span>2</span>
-            <p>Organized by your selected programming language.</p>
+            <p>Platform organizes your code snippets by your selected programming language.</p>
           </div>
           <div>
             <span>3</span>
-            <p>Easily reuse and update code across all your projects. </p>
+            <p>Easily reuse and update code across all your projects.</p>
+          </div>
+          <div>
+            <span>4</span>
+            <p>
+              <b>Key Features:</b><br />
+              🔒 Private & Secure<br />
+              🧠 Organize by language<br />
+              💾 Save & edit instantly<br />
+              🛠️ Built for devs, not distractions
+            </p>
           </div>
         </div>
       </section>
