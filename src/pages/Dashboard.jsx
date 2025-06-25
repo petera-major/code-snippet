@@ -51,7 +51,7 @@ export default function Dashboard() {
     }, 5000); 
   
     return () => clearInterval(interval); 
-  }, []);
+  }, [quotes]);
 
   return (
     <>
