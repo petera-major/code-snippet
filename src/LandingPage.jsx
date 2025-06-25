@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
+import { Typewriter } from 'react-simple-typewriter'
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -11,8 +12,16 @@ export default function LandingPage() {
       <div className="hero-content">
         <h1>CodeVaultSnip</h1>
         <p>
-          A personal developer tool for saving code snippets and getting help
-          from other developers.
+          <Typewriter
+            words={[
+              'A sleek tool for developers to save code snippets, stay organized, and get help from the community.'
+            ]}
+            loop={false}
+            cursor
+            cursorStyle='_'
+            typeSpeed={50}
+            deleteSpeed={0}
+          />
         </p>
         <div className="button-group">
           <button onClick={() => navigate("/login")}>Sign In</button>
