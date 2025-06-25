@@ -1,0 +1,84 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 247, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .modal-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    color: #00f7ff;
+  }
+  
+  .modal-content input,
+  .modal-content textarea,
+  .modal-content select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  
+  .modal-content select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 20 20'%3E%3Cpath d='M10 12l-5-5h10l-5 5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+  }
+  
+  .modal-content button {
+    padding: 0.7rem 1.2rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s ease;
+  }
+  
+  .modal-content button[type="submit"] {
+    background: #00f7ff;
+    color: #000;
+    border: none;
+  }
+  
+  .modal-content button[type="submit"]:hover {
+    background: #00e0e0;
+  }
+  
+  .modal-content button[type="button"] {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .modal-content button[type="button"]:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  

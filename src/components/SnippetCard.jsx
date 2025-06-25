@@ -37,8 +37,8 @@ export default function SnippetCard({ snippet, refresh, onView }) {
             onChange={(e) => setNewCode(e.target.value)}
           />
           <div className="snippet-actions">
-            <button onClick={handleUpdate} className="snippet-btn">✅ Save</button>
-            <button onClick={() => setEditing(false)} className="snippet-btn">❌ Cancel</button>
+            <button onClick={handleUpdate} className="snippet-btn">💾 Save</button>
+            <button onClick={() => setEditing(false)} className="snippet-btn">✖️ Cancel</button>
           </div>
         </>
       ) : (

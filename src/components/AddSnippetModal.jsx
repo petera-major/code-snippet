@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { auth, db } from "../firebase";
+import './addsnippetmodal.css';
+
 
 export default function AddSnippetModal({ onClose }) {
   const [title, setTitle] = useState("");
