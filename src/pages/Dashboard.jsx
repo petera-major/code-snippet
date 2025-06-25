@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { collection, query, where, getDocs, orderBy } from "firebase/firestore";
 import { auth, db } from "../firebase";
 import Navbar from "../components/Navbar";
@@ -12,7 +12,7 @@ export default function Dashboard() {
   const [showModal, setShowModal] = useState(false);
   const [quoteIndex, setQuoteIndex] = useState(0);
 
-  const quotes = [
+  const quotes = useMemo(()=> [
     "Code is like humor. When you have to explain it, it’s bad.",
     "Programs must be written for people to read.",
     "The best code is no code at all.",
@@ -23,7 +23,7 @@ export default function Dashboard() {
     "🚀 Deploy early, iterate often.",
     "First, solve the problem. Then, write the code.",
     "Good programmers write code humans can understand.",
-  ];
+  ], []);
 
   useEffect(() => {
     const fetchSnippets = async () => {
@@ -51,7 +51,7 @@ export default function Dashboard() {
     }, 5000); 
   
     return () => clearInterval(interval); 
-  }, [quotes]);
+  }, [quotes.length]);
 
   return (
     <>
