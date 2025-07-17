@@ -9,6 +9,7 @@ jest.mock("firebase/firestore", () => ({
   deleteDoc: jest.fn(() => Promise.resolve()),
 }));
 
+// A test to make sure the snippet preview shows the code snippets, can be closed, deletes and copies
 describe("SnippetModal Component", () => {
   const mockSnippet = {
     id: "1",
