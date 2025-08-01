@@ -1,3 +1,15 @@
+/**
+ * @file SnippetModal.test.js
+ * @description Unit tests for the SnippetModal component.
+ * Tests the rendering, closing behavior, copying, and delete functionality
+ * of the snippet preview modal. Mocks Firestore deletion and copy.
+ *
+ * Tools used: 
+ * - React Testing Library
+ * - Jest
+ * - Mocked Firebase Firestore
+ */
+
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import SnippetModal from '../components/SnippetModal';
