@@ -1,5 +1,4 @@
 /**
- * @file SnippetModal.test.js
  * @description Unit tests for the SnippetModal component.
  * Tests the rendering, closing behavior, copying, and delete functionality
  * of the snippet preview modal. Mocks Firestore deletion and copy.
