@@ -17,3 +17,5 @@ Tech stack
 - Deployment Netlify & Railway
 
 Live site at: [CodeVaultSnip](https://codevaultsnip.org/)
+
+Jest Documentation: [Jest Tests](https://github.com/petera-major/code-snippet/blob/testing/src/tests/tests.md)
