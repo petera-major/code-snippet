@@ -16,4 +16,4 @@ Tech stack
 - Testing: Jest
 - Deployment Netlify & Railway
 
-Live site at: (CodeVaultSnip)[https://codevaultsnip.org/]
+Live site at: [CodeVaultSnip](https://codevaultsnip.org/)
