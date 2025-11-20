@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# **CodeVaultSnip**
+### A Developer Productivity Tool for Saving, Organizing, and Reusing Code Snippets
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Tech Stack:**  
+React • JavaScript • Firebase • Node.js • Tailwind CSS • Jest • GitHub Actions • Accessibility (WCAG 2.1)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Overview**
+CodeVaultSnip is a lightweight developer productivity tool designed to store, organize, and instantly retrieve code snippets across multiple languages. The project showcases modern front-end engineering with a strong focus on accessibility, real-time syncing, testing, and clean UI architecture.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Live Demo**  
+https://codevaultsnip.org
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## **Key Features**
+- Searchable snippet library with tag-based filtering  
+- Real-time sync using Firebase  
+- Persistent snippet storage  
+- Clean, distraction-free UI  
+- Accessibility-first design (WCAG 2.1 compliant)  
+- Automated tests with Jest  
+- CI/CD with GitHub Actions  
+- Organized React + TypeScript project structure  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## **Accessibility Features**
+This app was designed following **WCAG 2.1** standards:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Semantic HTML & ARIA attributes  
+- Full keyboard navigation  
+- Visible, accessible focus states  
+- High-contrast theme support  
+- Reduced-motion mode  
+- Screen-reader friendly form labels & error messaging  
+- Proper heading structure for assistive technology  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **Testing**
+CodeVaultSnip includes automated Jest tests for:
 
-### `npm run eject`
+- Utility functions  
+- Snippet creation logic  
+- Component behavior  
+- Rendering validation  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Tools Used:**  
+- Jest  
+- React Testing Library *(optional)*  
+- GitHub Actions for CI  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## **Project Structure**
+```
+src/
+ ├── components/
+ ├── context/
+ ├── hooks/
+ ├── pages/
+ ├── styles/
+ ├── utils/
+ └── tests/
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Architecture Highlights**
+- Context API for global snippet state  
+- Custom hooks for reusable logic  
+- Firebase integration layer separated from UI  
+- Strong TypeScript typing across components  
+- Modular utility folder for clean, testable logic  
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **Why I Built This**
+I found myself constantly reusing patterns from old projects, copying code from notes, or digging through repos. CodeVaultSnip solves that by providing a centralized, organized, and accessible place to save and retrieve reusable code snippets — improving speed and workflow for developers.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## **Tech Stack Details**
 
-### Analyzing the Bundle Size
+### **Frontend**
+- React (Hooks, Context API)
+- JavaScript  
+- Tailwind CSS  
+- Semantic HTML + ARIA  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Backend / Services**
+- Firebase Authentication  
+- Firebase Firestore for real-time updates  
 
-### Making a Progressive Web App
+### **Tooling**
+- Jest  
+- GitHub Actions (CI/CD)  
+- ESLint / Prettier  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## **What This Project Demonstrates**
+- Clean React + TypeScript engineering  
+- Accessibility-first UI development  
+- WCAG & ARIA understanding  
+- Real-time data handling  
+- Component-driven architecture  
+- Testing + CI/CD workflows  
+- Ability to ship polished, production-style code  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is especially relevant for teams focused on **front-end quality, accessibility, and testing**—like QualityLogic.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
