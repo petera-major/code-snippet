@@ -103,7 +103,7 @@ I found myself constantly reusing patterns from old projects, copying code from 
 ---
 
 ## **What This Project Demonstrates**
-- Clean React + TypeScript engineering  
+- Clean React + JavaScript  
 - Accessibility-first UI development  
 - WCAG & ARIA understanding  
 - Real-time data handling  
